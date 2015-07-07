@@ -12,6 +12,7 @@
 		AE884D9B1B4C38B2008BB3BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE884D991B4C38B2008BB3BC /* Main.storyboard */; };
 		AE884D9D1B4C38B2008BB3BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE884D9C1B4C38B2008BB3BC /* Images.xcassets */; };
 		AE884DA01B4C38B2008BB3BC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE884D9E1B4C38B2008BB3BC /* LaunchScreen.xib */; };
+		AE884DBE1B4C3B94008BB3BC /* SpecsAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE884DBD1B4C3B94008BB3BC /* SpecsAppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +23,20 @@
 		AE884D9A1B4C38B2008BB3BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE884D9C1B4C38B2008BB3BC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AE884D9F1B4C38B2008BB3BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AE884DB91B4C3B94008BB3BC /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE884DBC1B4C3B94008BB3BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE884DBD1B4C3B94008BB3BC /* SpecsAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecsAppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AE884D8D1B4C38B2008BB3BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE884DB61B4C3B94008BB3BC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +50,7 @@
 			isa = PBXGroup;
 			children = (
 				AE884D921B4C38B2008BB3BC /* SwiftAppUsingCedar */,
+				AE884DBA1B4C3B94008BB3BC /* Specs */,
 				AE884D911B4C38B2008BB3BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				AE884D901B4C38B2008BB3BC /* SwiftAppUsingCedar.app */,
+				AE884DB91B4C3B94008BB3BC /* Specs.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +85,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AE884DBA1B4C3B94008BB3BC /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				AE884DBD1B4C3B94008BB3BC /* SpecsAppDelegate.swift */,
+				AE884DBB1B4C3B94008BB3BC /* Supporting Files */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		AE884DBB1B4C3B94008BB3BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE884DBC1B4C3B94008BB3BC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -92,6 +122,23 @@
 			productReference = AE884D901B4C38B2008BB3BC /* SwiftAppUsingCedar.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AE884DB81B4C3B94008BB3BC /* Specs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE884DD51B4C3B94008BB3BC /* Build configuration list for PBXNativeTarget "Specs" */;
+			buildPhases = (
+				AE884DB51B4C3B94008BB3BC /* Sources */,
+				AE884DB61B4C3B94008BB3BC /* Frameworks */,
+				AE884DB71B4C3B94008BB3BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Specs;
+			productName = Specs;
+			productReference = AE884DB91B4C3B94008BB3BC /* Specs.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -102,6 +149,9 @@
 				ORGANIZATIONNAME = pivotal;
 				TargetAttributes = {
 					AE884D8F1B4C38B2008BB3BC = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					AE884DB81B4C3B94008BB3BC = {
 						CreatedOnToolsVersion = 6.3;
 					};
 				};
@@ -120,6 +170,7 @@
 			projectRoot = "";
 			targets = (
 				AE884D8F1B4C38B2008BB3BC /* SwiftAppUsingCedar */,
+				AE884DB81B4C3B94008BB3BC /* Specs */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +186,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AE884DB71B4C3B94008BB3BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -144,6 +202,14 @@
 			files = (
 				AE884D981B4C38B2008BB3BC /* ViewController.swift in Sources */,
 				AE884D961B4C38B2008BB3BC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE884DB51B4C3B94008BB3BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE884DBE1B4C3B94008BB3BC /* SpecsAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +338,30 @@
 			};
 			name = Release;
 		};
+		AE884DD61B4C3B94008BB3BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Specs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AE884DD71B4C3B94008BB3BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Specs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -292,6 +382,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		AE884DD51B4C3B94008BB3BC /* Build configuration list for PBXNativeTarget "Specs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE884DD61B4C3B94008BB3BC /* Debug */,
+				AE884DD71B4C3B94008BB3BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

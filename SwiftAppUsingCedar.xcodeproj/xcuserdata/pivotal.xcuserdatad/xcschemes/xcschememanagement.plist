@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Specs.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>SwiftAppUsingCedar.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,16 @@
 			<true/>
 		</dict>
 		<key>AE884DA41B4C38B2008BB3BC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AE884DB81B4C3B94008BB3BC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AE884DCC1B4C3B94008BB3BC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
