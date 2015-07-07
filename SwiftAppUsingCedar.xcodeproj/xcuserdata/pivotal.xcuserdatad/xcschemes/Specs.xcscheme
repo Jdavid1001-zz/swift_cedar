@@ -42,16 +42,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AE884DCC1B4C3B94008BB3BC"
-               BuildableName = "SpecsTests.xctest"
-               BlueprintName = "SpecsTests"
-               ReferencedContainer = "container:SwiftAppUsingCedar.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
