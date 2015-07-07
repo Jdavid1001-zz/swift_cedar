@@ -13,6 +13,7 @@
 		AE884D9D1B4C38B2008BB3BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE884D9C1B4C38B2008BB3BC /* Images.xcassets */; };
 		AE884DA01B4C38B2008BB3BC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE884D9E1B4C38B2008BB3BC /* LaunchScreen.xib */; };
 		AE884DBE1B4C3B94008BB3BC /* SpecsAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE884DBD1B4C3B94008BB3BC /* SpecsAppDelegate.swift */; };
+		AE884DDD1B4C49A5008BB3BC /* Cedar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE884DDC1B4C49A3008BB3BC /* Cedar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		AE884DB91B4C3B94008BB3BC /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE884DBC1B4C3B94008BB3BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE884DBD1B4C3B94008BB3BC /* SpecsAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecsAppDelegate.swift; sourceTree = "<group>"; };
+		AE884DDC1B4C49A3008BB3BC /* Cedar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cedar.framework; path = Carthage/Build/iOS/Cedar.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE884DDD1B4C49A5008BB3BC /* Cedar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +52,7 @@
 		AE884D871B4C38B2008BB3BC = {
 			isa = PBXGroup;
 			children = (
+				AE884DDB1B4C4986008BB3BC /* Carthage */,
 				AE884D921B4C38B2008BB3BC /* SwiftAppUsingCedar */,
 				AE884DBA1B4C3B94008BB3BC /* Specs */,
 				AE884D911B4C38B2008BB3BC /* Products */,
@@ -102,6 +106,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AE884DDB1B4C4986008BB3BC /* Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				AE884DDC1B4C49A3008BB3BC /* Cedar.framework */,
+			);
+			name = Carthage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,6 +141,7 @@
 				AE884DB51B4C3B94008BB3BC /* Sources */,
 				AE884DB61B4C3B94008BB3BC /* Frameworks */,
 				AE884DB71B4C3B94008BB3BC /* Resources */,
+				AE884DDF1B4C4A14008BB3BC /* Copy Carthage Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,6 +207,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AE884DDF1B4C4A14008BB3BC /* Copy Carthage Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Cedar.framework",
+			);
+			name = "Copy Carthage Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE884D8C1B4C38B2008BB3BC /* Sources */ = {
@@ -342,6 +373,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -356,6 +391,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Specs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
