@@ -1,6 +1,6 @@
 import Foundation
 import Nimble
-import Cedar
+import CedarRunner
 
 public class NimbleCedarAssertionHandler: AssertionHandler {
     public func assert(assertion: Bool, message: FailureMessage, location: SourceLocation) {

@@ -1,5 +1,5 @@
 import UIKit
-import Cedar
+import CedarRunner
 import Nimble
 
 @UIApplicationMain
