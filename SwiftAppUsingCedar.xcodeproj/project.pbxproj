@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AE5AA6A61B4C858700C2DD6F /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5AA6A51B4C857E00C2DD6F /* Nimble.framework */; };
 		AE5AA6B81B4C87F200C2DD6F /* ExampleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5AA6A71B4C871100C2DD6F /* ExampleSpec.swift */; };
+		AE5AA6D81B4CA46F00C2DD6F /* NimbleCedarAssertionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5AA6D71B4CA46F00C2DD6F /* NimbleCedarAssertionHandler.swift */; };
 		AE884D961B4C38B2008BB3BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE884D951B4C38B2008BB3BC /* AppDelegate.swift */; };
 		AE884D981B4C38B2008BB3BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE884D971B4C38B2008BB3BC /* ViewController.swift */; };
 		AE884D9B1B4C38B2008BB3BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE884D991B4C38B2008BB3BC /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		AE5AA6A51B4C857E00C2DD6F /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		AE5AA6A71B4C871100C2DD6F /* ExampleSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleSpec.swift; sourceTree = "<group>"; };
+		AE5AA6D71B4CA46F00C2DD6F /* NimbleCedarAssertionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NimbleCedarAssertionHandler.swift; sourceTree = "<group>"; };
 		AE884D901B4C38B2008BB3BC /* SwiftAppUsingCedar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAppUsingCedar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE884D941B4C38B2008BB3BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE884D951B4C38B2008BB3BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				AE5AA6A71B4C871100C2DD6F /* ExampleSpec.swift */,
 				AE884DBD1B4C3B94008BB3BC /* SpecsAppDelegate.swift */,
 				AE884DBB1B4C3B94008BB3BC /* Supporting Files */,
+				AE5AA6D71B4CA46F00C2DD6F /* NimbleCedarAssertionHandler.swift */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE884DBE1B4C3B94008BB3BC /* SpecsAppDelegate.swift in Sources */,
+				AE5AA6D81B4CA46F00C2DD6F /* NimbleCedarAssertionHandler.swift in Sources */,
 				AE5AA6B81B4C87F200C2DD6F /* ExampleSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
