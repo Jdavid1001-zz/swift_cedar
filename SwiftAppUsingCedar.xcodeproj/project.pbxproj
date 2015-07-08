@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE5AA6A61B4C858700C2DD6F /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5AA6A51B4C857E00C2DD6F /* Nimble.framework */; };
+		AE5AA6B81B4C87F200C2DD6F /* ExampleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5AA6A71B4C871100C2DD6F /* ExampleSpec.swift */; };
 		AE884D961B4C38B2008BB3BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE884D951B4C38B2008BB3BC /* AppDelegate.swift */; };
 		AE884D981B4C38B2008BB3BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE884D971B4C38B2008BB3BC /* ViewController.swift */; };
 		AE884D9B1B4C38B2008BB3BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE884D991B4C38B2008BB3BC /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE5AA6A51B4C857E00C2DD6F /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		AE5AA6A71B4C871100C2DD6F /* ExampleSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleSpec.swift; sourceTree = "<group>"; };
 		AE884D901B4C38B2008BB3BC /* SwiftAppUsingCedar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAppUsingCedar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE884D941B4C38B2008BB3BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE884D951B4C38B2008BB3BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE884DDD1B4C49A5008BB3BC /* Cedar.framework in Frameworks */,
+				AE5AA6A61B4C858700C2DD6F /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +97,7 @@
 		AE884DBA1B4C3B94008BB3BC /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				AE5AA6A71B4C871100C2DD6F /* ExampleSpec.swift */,
 				AE884DBD1B4C3B94008BB3BC /* SpecsAppDelegate.swift */,
 				AE884DBB1B4C3B94008BB3BC /* Supporting Files */,
 			);
@@ -109,6 +115,7 @@
 		AE884DDB1B4C4986008BB3BC /* Carthage */ = {
 			isa = PBXGroup;
 			children = (
+				AE5AA6A51B4C857E00C2DD6F /* Nimble.framework */,
 				AE884DDC1B4C49A3008BB3BC /* Cedar.framework */,
 			);
 			name = Carthage;
@@ -216,6 +223,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Cedar.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
 			);
 			name = "Copy Carthage Frameworks";
 			outputPaths = (
@@ -241,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE884DBE1B4C3B94008BB3BC /* SpecsAppDelegate.swift in Sources */,
+				AE5AA6B81B4C87F200C2DD6F /* ExampleSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,15 +383,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks,
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Specs/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -392,11 +408,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks,
 				);
 				INFOPLIST_FILE = Specs/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -429,6 +452,7 @@
 				AE884DD71B4C3B94008BB3BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

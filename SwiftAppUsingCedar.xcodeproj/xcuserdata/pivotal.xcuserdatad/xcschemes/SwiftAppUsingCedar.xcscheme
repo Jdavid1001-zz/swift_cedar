@@ -20,20 +20,6 @@
                ReferencedContainer = "container:SwiftAppUsingCedar.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AE884DA41B4C38B2008BB3BC"
-               BuildableName = "SwiftAppUsingCedarTests.xctest"
-               BlueprintName = "SwiftAppUsingCedarTests"
-               ReferencedContainer = "container:SwiftAppUsingCedar.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -42,16 +28,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AE884DA41B4C38B2008BB3BC"
-               BuildableName = "SwiftAppUsingCedarTests.xctest"
-               BlueprintName = "SwiftAppUsingCedarTests"
-               ReferencedContainer = "container:SwiftAppUsingCedar.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
