@@ -1,2 +1,2 @@
-git "/Users/pivotal/workspace/cedar-runner" "master"
+git "/Users/pivotal/workspace/cedar" "swift-spec-runner"
 github "quick/nimble"
