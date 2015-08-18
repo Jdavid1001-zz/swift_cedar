@@ -1,2 +1,2 @@
-git "/Users/pivotal/workspace/cedar" "f99155d7e009c43d80dc2726e10f39d64b7604be"
-github "quick/nimble" "v1.0.0"
+github "pivotal/cedar" "9eddb9e22c9ea73a2e1998cae66b2601f3d6cbb0"
+github "briancroom/nimble" "89fba37e57b78da92c0934841257926c8ff5dc43"
