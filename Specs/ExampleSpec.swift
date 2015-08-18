@@ -1,8 +1,5 @@
-import UIKit
-import XCTest
 import CedarRunner
 import Nimble
-
 
 class MyAwesomeSpecs : CDRSpec {
 
