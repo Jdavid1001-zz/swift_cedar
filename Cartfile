@@ -1,2 +1,2 @@
-git "/Users/pivotal/workspace/cedar" "swift-spec-runner"
-github "quick/nimble"
+github "pivotal/cedar" "swift-spec-runner"
+github "briancroom/nimble" "weakly-link-xctest"
